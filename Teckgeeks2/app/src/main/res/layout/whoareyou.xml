@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wau_bgr">
+
+        <TextView
+            android:id="@+id/welcome_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_light"
+            android:textFontWeight="600"
+            android:textSize="35sp"
+            android:text="Welcome to"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/techgeeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TechGeeks"
+            android:fontFamily="@font/poppins_bold"
+            android:textFontWeight="600"
+            android:textSize="35sp"
+            android:layout_below="@+id/welcome_to"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/rec1"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/techgeeks"
+            android:background="@drawable/green_rec"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="90dp"
+                android:textSize="20dp"
+                android:text="Need a Professional"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:textSize="16dp"
+                android:text="Post a job or hire a TechGeek"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/techgeeks"
+            android:src="@drawable/pending"/>
+
+        <LinearLayout
+            android:id="@+id/rec2"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rec1"
+            android:background="@drawable/orange_rec"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="90dp"
+                android:textSize="20dp"
+                android:text="Become a TechGeek"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:textSize="16dp"
+                android:text="Join TechGeeks and start"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/rec1"
+            android:src="@drawable/group"/>
+
+        <LinearLayout
+            android:id="@+id/rec3"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rec2"
+            android:background="@drawable/black_rec"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="90dp"
+                android:textSize="20dp"
+                android:text="Not Sure!"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:textSize="16dp"
+                android:text="Join TechGeeks and explore"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/rec2"
+            android:src="@drawable/fly"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rec3"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account?"/>
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bgr"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verified!"
+        android:textColor="#343434"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations, your account has been verified."
+        android:textColor="#B3343434"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/verified_icon"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verified_rectangle"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@id/verified">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Documents Required"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All documents verified."
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/document"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/check_icon"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="Email Verification"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginVertical="5dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/check_icon"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="Proof of Identity (100 Pts)"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginVertical="5dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/check_icon"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="Police Check"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginVertical="5dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/check_icon"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="Working Rights Check"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginVertical="5dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gohome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checklist"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#66A400"
+        android:text="Let’s Go TechGeek!"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#FEFEFE" />
+
+</RelativeLayout>

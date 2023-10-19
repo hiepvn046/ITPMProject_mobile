@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Teckgeeks2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string-array name="durationList">
+        <item>For 1 day</item>
+        <item>For 1 week</item>
+        <item>For 1 month</item>
+        <item>For more than 1 month</item>
+    </string-array>
+
+    <string-array name="servicesList">
+        <item>IT Support Level 1</item>
+        <item>IT Support Level 2</item>
+        <item>IT Support Level 3</item>
+        <item>IT Support Level 4</item>
+        <item>IT Technician</item>
+        <item>Network Engineer</item>
+        <item>Cloud Services Engineer</item>
+        <item>Software Engineer</item>
+        <item>Software Developer</item>
+        <item>Web Developer</item>
+        <item>Web Designer</item>
+        <item>Graphic Designer</item>
+        <item>UX Designer</item>
+        <item>UI Designer</item>
+        <item>Data Scientist</item>
+        <item>Data Analyst</item>
+        <item>Data Engineer</item>
+        <item>Data Architect</item>
+        <item>Database Administrator</item>
+        <item>Database Developer</item>
+        <item>Database Manager</item>
+        <item>Database Architect</item>
+        <item>Database Designer</item>
+        <item>Database Analyst</item>
+        <item>Database Engineer</item>
+        <item>Cyber Security Analyst</item>
+        <item>Cyber Security Engineer</item>
+        <item>Cyber Security Architect</item>
+        <item>Cyber Security Manager</item>
+    </string-array>
+
+    <string-array name="jobTypeList">
+        <item>full-time</item>
+        <item>part-time</item>
+        <item>contract</item>
+        <item>temporary</item>
+        <item>volunteer</item>
+        <item>internship</item>
+    </string-array>
+
+    <string-array name="dateList">
+        <item>2023-10-19</item>
+        <item>2023-10-20</item>
+        <item>2023-10-21</item>
+        <item>2023-10-22</item>
+        <item>2023-10-23</item>
+        <item>2023-10-24</item>
+        <item>2023-10-25</item>
+        <item>2023-10-26</item>
+        <item>2023-10-27</item>
+        <item>2023-10-28</item>
+        <item>2023-10-29</item>
+        <item>2023-10-30</item>
+        <item>2023-10-31</item>
+        <item>2023-11-01</item>
+        <item>2023-11-02</item>
+        <item>2023-11-03</item>
+        <item>2023-11-04</item>
+        <item>2023-11-05</item>
+        <item>2023-11-06</item>
+        <item>2023-11-07</item>
+        <item>2023-11-08</item>
+        <item>2023-11-09</item>
+        <item>2023-11-10</item>
+        <item>2023-11-11</item>
+        <item>2023-11-12</item>
+        <item>2023-11-13</item>
+        <item>2023-11-14</item>
+        <item>2023-11-15</item>
+        <item>2023-11-16</item>
+        <item>2023-11-17</item>
+        <item>2023-11-18</item>
+        <item>2023-11-19</item>
+
+    </string-array>
+
+
+</resources>

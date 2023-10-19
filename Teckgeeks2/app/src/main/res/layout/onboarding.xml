@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding">
+
+
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Back"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textFontWeight="600"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/back"
+            android:fontFamily="@font/poppins_light"
+            android:text="Skip"
+            android:textColor="@color/gray"
+            android:textFontWeight="600"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Your Tasks"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:textFontWeight="600"
+            android:textSize="28sp"
+            android:layout_below="@id/skip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="344sp"
+            android:layout_height="72sp"
+            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking."
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            />
+
+
+
+
+
+    </RelativeLayout>
+

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FAFAFA"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi,"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@drawable/border_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/hi"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hi"
+            android:text="Devsnet"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="20dp"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/name">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextfield"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textColor="#C1C1C1"
+                android:textColorHint="#C1C1C1" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/filter"
+                android:background="@drawable/border_rectangle"
+                android:layout_toLeftOf="@+id/hi"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/todaylabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/search"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="October 12, 2023"
+            android:layout_toLeftOf="@+id/todaylabel"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/search"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="#66343434"
+            android:layout_marginVertical="10dp"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/calender"/>
+
+        <ScrollView
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todaylabel"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/edittextfield">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/shopicon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/eclipse"
+                    android:src="@drawable/shop_icon" />
+
+                <TextView
+                    android:id="@+id/jobtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/shopicon"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Cloud Services Engineer"
+                    android:textColor="#B3343434"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobtitle"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_toRightOf="@id/shopicon"
+                    android:drawableLeft="@drawable/location_icon"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="7 bell yard , W976, New York"
+                    android:textColor="#B3343434"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_toRightOf="@id/shopicon"
+                    android:drawableLeft="@drawable/clock_icon"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="For 1 Month"
+                    android:textColor="#B3343434"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/postedtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_toRightOf="@id/duration"
+                    android:drawableLeft="@drawable/dot"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Posted 1 mints ago"
+                    android:textColor="#B3343434"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordertb"
+                    android:layout_below="@id/postedtime"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Comments"
+                        android:background="@drawable/gray_rectangle"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"
+                        android:textColor="#B3343434"
+                        android:gravity="center"
+                        android:padding="5dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dot"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="5dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Offers"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"
+                        android:textColor="#B3343434"
+                        android:background="@drawable/gray_rectangle"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dot"
+                        android:layout_marginVertical="20dp"
+                        android:layout_marginHorizontal="5dp"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="0 Private Messages"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"
+                        android:textColor="#B3343434"
+                        android:background="@drawable/gray_rectangle"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/budgetlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budget"
+                    android:layout_below="@+id/info"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:textColor="#80343434"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/budget"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="100$"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/budgetlbl"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/per"
+                    android:layout_toRightOf="@id/budget"
+                    android:text="Per hour"
+                    android:layout_below="@+id/budgetlbl"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:textColor="#80343434"
+                    android:layout_margin="7dp"/>
+
+                <TextView
+                    android:layout_width="161dp"
+                    android:layout_height="53dp"
+                    android:layout_below="@+id/info"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/budgetlbl"
+                    android:background="@drawable/black_rec"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Open"
+                    android:textColor="#FEFEFE"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/postjob"
+            android:layout_below="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#2E3234"
+            android:textSize="16sp"
+            android:text="Post a job" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="@drawable/rectangle"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_icon"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/send_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/stickynote_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/add_button"
+            android:background="@null"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FAFAFA"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi,"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@drawable/border_rectangle"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/hi"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hi"
+            android:text="Devsnet"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="20dp"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/name">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextfield"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textColor="#C1C1C1"
+                android:textColorHint="#C1C1C1" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/filter"
+                android:background="@drawable/border_rectangle"
+                android:layout_toLeftOf="@+id/hi"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/todaylabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/search"/>
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="October 12, 2023"
+            android:layout_toLeftOf="@+id/todaylabel"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/search"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="#66343434"
+            android:layout_marginVertical="10dp"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/calender"/>
+
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="250dp"
+            android:layout_height="169dp"
+            android:src="@drawable/illustration2"
+            android:layout_below="@id/todaylabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Job posted yet!"
+            android:layout_below="@+id/illustration"
+            android:layout_centerHorizontal="true"
+            android:textColor="#B3343434"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <TextView
+            android:id="@+id/substatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post a job to get your work done easily."
+            android:layout_below="@+id/status"
+            android:layout_centerHorizontal="true"
+            android:textColor="#B3343434"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/postjob"
+            android:layout_below="@id/substatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#2E3234"
+            android:textSize="16sp"
+            android:text="Post a job" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="@drawable/rectangle"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/home_icon"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/send_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/stickynote_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_icon"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/add_button"
+            android:background="@null"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>

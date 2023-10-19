@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bgr"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Verification"
+        android:textColor="#343434"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="15dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please verify your email."
+        android:textColor="#B3343434"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/vlabel"
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6 Digit PIN has been send to your email"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="#B3343434"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"/>
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_below="@id/vlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittextfield"
+        android:drawableLeft="@drawable/pad_icon"
+        android:drawablePadding="10dp"
+        android:hint="6 Digit PIN"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:textColor="#C1C1C1"
+        android:textColorHint="#C1C1C1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verify"
+        android:layout_below="@id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#2E3234"
+        android:textSize="16sp"
+        android:text="Verify!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/others"
+        android:layout_below="@id/verify"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        android:textColor="#B3343434"
+        android:text="Or continue with"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/google"
+        android:layout_below="@id/others"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#2E3234"
+        android:drawableLeft="@drawable/google_icon"
+        android:backgroundTint="#FFFFFF"
+        android:text="Sign in with Google" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/apple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/apple_icon"
+        android:text="Sign in with Apple"
+        android:textColor="#2E3234" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/apple"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|bottom">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t Have Any Account?"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:textColor="#B3343434"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>

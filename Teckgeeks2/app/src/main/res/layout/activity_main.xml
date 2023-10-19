@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/onboarding"
+    tools:context=".MainActivity">
+
+        <View
+            android:layout_width="297dp"
+            android:layout_height="124dp"
+            android:background="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:background="@drawable/button" />
+
+
+
+</LinearLayout>
+

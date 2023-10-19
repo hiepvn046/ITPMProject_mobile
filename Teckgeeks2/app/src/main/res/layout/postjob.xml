@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrowleft"
+            android:background="@drawable/border_rectangle"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/menu"
+            android:background="@drawable/border_rectangle"
+            android:layout_toLeftOf="@+id/back"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add information to hire your required person"
+            android:layout_below="@+id/back"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="22sp"
+            android:layout_marginVertical="20dp"
+            android:textColor="#E6343434" />
+
+        <TextView
+            android:id="@+id/jobtitlelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="Job Title"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <EditText
+            android:id="@+id/jobtitlefield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Job title"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@+id/jobtitlelbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginVertical="10dp" />
+
+        <TextView
+            android:id="@+id/servicelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jobtitlefield"
+            android:text="Service Name"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <Spinner
+            android:id="@+id/servicespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@id/servicelbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/jobtypelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servicespinner"
+            android:text="Job Type"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <Spinner
+            android:id="@+id/jobtypespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@id/jobtypelbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/locationlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jobtypespinner"
+            android:text="Location"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <EditText
+            android:id="@+id/locationspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@id/locationlbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:hint="Enter location"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/jobdurationlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationspinner"
+            android:text="Job Duration"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <Spinner
+            android:id="@+id/jobdurationspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@id/jobdurationlbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/timelbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobdurationspinner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:textColor="#B3343434"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Finish Date"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="16sp"
+                android:textColor="#B3343434"
+                android:layout_marginHorizontal="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timelbl"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/startdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittextfield"
+                android:padding="15dp"
+                android:textSize="14sp"
+
+                android:layout_marginHorizontal="10dp"/>
+
+            <Spinner
+                android:id="@+id/finishdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittextfield"
+                android:padding="15dp"
+                android:textSize="14sp"
+
+                android:layout_marginHorizontal="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descriptionlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timespinner"
+            android:text="Job Description"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <EditText
+            android:id="@+id/descriptionbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter details here..."
+            android:background="@drawable/edittextfield"
+            android:layout_below="@+id/descriptionlbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginVertical="10dp"
+            android:inputType="textMultiLine"
+            android:lines="5"/>
+
+        <TextView
+            android:id="@+id/budgetlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionbox"
+            android:text="Budget"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:textColor="#B3343434"/>
+
+        <EditText
+            android:id="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please mention budget per hour for this task"
+            android:background="@drawable/edittextfield"
+            android:layout_below="@+id/budgetlbl"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:layout_marginVertical="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/postjob"
+            android:layout_below="@id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#2E3234"
+            android:textSize="16sp"
+            android:text="Post a job" />
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
